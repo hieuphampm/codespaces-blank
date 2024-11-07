@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    container_name: db_1
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: myshop
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
